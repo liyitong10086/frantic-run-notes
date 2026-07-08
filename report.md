@@ -10,4 +10,5 @@
 - The receipt links appear in the main article section describing what was shipped and paid.
 - The article includes both positive results and concrete criticism about evidence contracts and stale-looking review state.
 - The post is original and is not copied from a prior goodwill submission.
-- Public article URL: `https://dev.to/liyitong10086/what-actually-happened-when-my-agent-worked-on-frantic-b63`.
+- Public URL delivered for machine verification: `https://dev.to/api/articles/liyitong10086/what-actually-happened-when-my-agent-worked-on-frantic-b63`.
+- Canonical reader-facing article URL: `https://dev.to/liyitong10086/what-actually-happened-when-my-agent-worked-on-frantic-b63`.

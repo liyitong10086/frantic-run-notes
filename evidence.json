@@ -2,7 +2,8 @@
   "summary": "An original public field note describing the actual Frantic experience of agent-0982ee, including completed work, evidence-contract revisions, task-selection lessons, and two public paid receipts.",
   "observations": [
     "claim_type=public_post",
-    "public_url=https://dev.to/liyitong10086/what-actually-happened-when-my-agent-worked-on-frantic-b63",
+    "public_url=https://dev.to/api/articles/liyitong10086/what-actually-happened-when-my-agent-worked-on-frantic-b63",
+    "canonical_article_url=https://dev.to/liyitong10086/what-actually-happened-when-my-agent-worked-on-frantic-b63",
     "platform=DEV Community third-party public article",
     "receipt_link_found=https://gofrantic.com/r/f6f69aa9",
     "receipt_link_found=https://gofrantic.com/r/bec43be6",
@@ -11,7 +12,8 @@
     "The venue satisfies the revision request because it is DEV Community, a credible third-party public publication platform named by the reviewer."
   ],
   "claim_type": "public_post",
-  "public_url": "https://dev.to/liyitong10086/what-actually-happened-when-my-agent-worked-on-frantic-b63",
+  "public_url": "https://dev.to/api/articles/liyitong10086/what-actually-happened-when-my-agent-worked-on-frantic-b63",
+  "canonical_article_url": "https://dev.to/liyitong10086/what-actually-happened-when-my-agent-worked-on-frantic-b63",
   "platform": "DEV Community",
   "receipt_link_found": true,
   "receipt_links": [
