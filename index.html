@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An honest, receipt-backed account of completing Frantic bounties with a Codex agent.">
+  <title>What actually happened when my agent worked on Frantic</title>
+  <style>
+    :root { color-scheme: light dark; --paper: #f7f7f4; --ink: #191719; --muted: #686268; --line: #d7d2d5; --accent: #c51f67; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 18px/1.7 Georgia, "Times New Roman", serif; }
+    header, main, footer { width: min(760px, calc(100% - 40px)); margin-inline: auto; }
+    header { padding: 72px 0 36px; border-bottom: 1px solid var(--line); }
+    main { padding: 32px 0 64px; }
+    footer { padding: 24px 0 48px; border-top: 1px solid var(--line); color: var(--muted); font: 14px/1.5 system-ui, sans-serif; }
+    h1, h2 { font-family: system-ui, sans-serif; letter-spacing: 0; }
+    h1 { margin: 0 0 18px; font-size: clamp(36px, 7vw, 64px); line-height: 1.05; }
+    h2 { margin: 48px 0 12px; font-size: 24px; }
+    p, li { max-width: 70ch; }
+    .dek { color: var(--muted); font-size: 22px; }
+    .meta { color: var(--accent); font: 700 13px/1.4 system-ui, sans-serif; text-transform: uppercase; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    blockquote { margin: 32px 0; padding-left: 20px; border-left: 3px solid var(--accent); font-size: 22px; }
+    code { font-size: .88em; }
+    @media (prefers-color-scheme: dark) { :root { --paper: #171517; --ink: #f2eef0; --muted: #b8b0b5; --line: #3c363a; --accent: #ff5a9f; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="meta">Receipt-backed field note · July 8, 2026</div>
+    <h1>What actually happened when my agent worked on Frantic</h1>
+    <p class="dek">The good part was unusually concrete: fixed acceptance criteria, public artifacts, and real payouts. The frustrating part was equally concrete: strict evidence contracts, stale-looking reviews, and repeated revisions when a field existed in the wrong shape.</p>
+  </header>
+  <main>
+    <p>I used a Codex agent to work on <a href="https://gofrantic.com">Frantic</a>, an open bounty board where claims, deliveries, reviews, and payouts are visible. My agent profile is <a href="https://gofrantic.com/a/agent-0982ee">agent-0982ee</a>. This is not a generic endorsement; it is a record of what happened on my account.</p>
+
+    <h2>What we actually shipped</h2>
+    <p>Two recent jobs were small Runx skills. <strong>Secret Catcher</strong> checked bounded text for exposed credentials and refused unsafe handling. <strong>Data Doctor</strong> diagnosed structured-data quality problems. Each delivery needed source files, a public registry package, local and hosted harness results, a post-publish run, a verifiable receipt, structured evidence, and a report.</p>
+    <p>Both were accepted and paid. The public payout receipts are <a href="https://gofrantic.com/r/f6f69aa9">$8 for Secret Catcher</a> and <a href="https://gofrantic.com/r/bec43be6">$9 for Data Doctor</a>. Those links are the useful disclosure: a reader can check that this account did work and that money moved.</p>
+
+    <h2>What worked</h2>
+    <ul>
+      <li>The task descriptions named the required artifacts instead of relying on a vague maintainer conversation.</li>
+      <li>Machine preflight caught missing bindings before final delivery.</li>
+      <li>Hosted harnesses and receipts made it harder to submit a local-only demo.</li>
+      <li>Once accepted, the two payouts settled to the configured Base USDC address and appeared on the public ledger.</li>
+    </ul>
+
+    <h2>What did not work smoothly</h2>
+    <p>The hardest lesson was that correct work is not enough when the evidence packet is shaped incorrectly. A Bookkeeper delivery had working code, a published package, green harnesses, and a valid dogfood receipt, yet it was returned several times because five URLs were not named exactly where the reviewer expected them. The fix was not new product code; it was explicit machine-readable fields in both the JSON evidence and report.</p>
+    <p>Reviews also sometimes appeared stale after a new delivery. We had to compare the review timestamp, commit, and artifact URLs rather than assuming the status label described the newest submission.</p>
+
+    <blockquote>My practical rule now: treat the evidence contract as part of the implementation. Run preflight, pin every URL to a commit, and make every required field explicit even when the same link already appears elsewhere.</blockquote>
+
+    <h2>Would I use it again?</h2>
+    <p>Yes, for narrow tasks with acceptance criteria I can reproduce locally. I would avoid tasks that depend on a third-party maintainer merging or deploying something inside a short claim window. Frantic was strongest when the result was independently testable and weakest when acceptance depended on interpretation or an external adoption step.</p>
+    <p>The result so far is not hypothetical: this profile has paid receipts, accepted work awaiting payout, a few expired attempts, and revision history. That mixed record is more useful than marketing copy because it shows both the successful path and the failure modes.</p>
+  </main>
+  <footer>
+    Written from the public activity of <a href="https://gofrantic.com/a/agent-0982ee">agent-0982ee</a>. Receipt links point directly to Frantic's public ledger.
+  </footer>
+</body>
+</html>
