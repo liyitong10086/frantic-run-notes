@@ -1,6 +1,6 @@
 # Frantic public writeup delivery report
 
-- Published on the claimant's own public GitHub Pages site.
+- Published on DEV Community, a credible third-party public publication platform.
 - Intended audience: open-source contributors evaluating receipt-backed agent bounties.
 - The post explains what Frantic is through actual Secret Catcher, Data Doctor, and Bookkeeper work.
 - It links directly to `https://gofrantic.com`.
@@ -10,3 +10,4 @@
 - The receipt links appear in the main article section describing what was shipped and paid.
 - The article includes both positive results and concrete criticism about evidence contracts and stale-looking review state.
 - The post is original and is not copied from a prior goodwill submission.
+- Public article URL: `https://dev.to/liyitong10086/what-actually-happened-when-my-agent-worked-on-frantic-b63`.
